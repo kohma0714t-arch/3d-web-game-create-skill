@@ -1,11 +1,11 @@
-# 3D Web Game Create Skill Suite 🎮✨
+# 3D Web Game Create Skill Suite 
 
 Google Antigravity 向けの自律型 3D Webブラウザゲーム制作エージェントスキル群です。
 Three.js、Cannon-es（または Rapier3D）、Vite、TypeScript を主軸とし、親オーケストレーターと5つの専門サブエージェントが協調して、企画立案からアセット・音響・ロジック・演出・ビルド検証までをフル自律で開発します。
 
 ---
 
-## 🌟 特徴
+##  特徴
 
 - **フル自律パイプライン**: ユーザーの簡単な要望（「三人称の3Dアクションゲームを作って」「宇宙を飛ぶ3Dシューティングを作って」など）から、3D-GDD策定、実装、テスト検証までを一貫して自動化。
 - **外部ファイル不要のプロシージャル設計**:
@@ -16,30 +16,30 @@ Three.js、Cannon-es（または Rapier3D）、Vite、TypeScript を主軸とし
 
 ---
 
-## 📂 ディレクトリ構成
+##  ディレクトリ構成
 
 ```text
 3d-web-game-create-skill/
 ├── docs/
 │   └── web_3d_game_create_architecture.md # アーキテクチャ詳細設計書
 └── skills/
-    ├── web-3d-game-create/                # 👑 親オーケストレータースキル
+    ├── web-3d-game-create/                #  親オーケストレータースキル
     │   └── SKILL.md
-    ├── game-3d-asset-specialist/          # 🎨 3Dビジュアル・テクスチャ専門スキル
+    ├── game-3d-asset-specialist/          #  3Dビジュアル・テクスチャ専門スキル
     │   └── SKILL.md
-    ├── game-3d-audio-specialist/          # 🔊 3D立体音響・Web Audioシンセ専門スキル
+    ├── game-3d-audio-specialist/          #  3D立体音響・Web Audioシンセ専門スキル
     │   └── SKILL.md
-    ├── game-3d-logic-specialist/          # ⚙️ 3D物理・エンティティ・ゲームループ専門スキル
+    ├── game-3d-logic-specialist/          #  3D物理・エンティティ・ゲームループ専門スキル
     │   └── SKILL.md
-    ├── game-3d-scene-specialist/          # 🎬 Three.jsシーン・カメラ・描画・UI専門スキル
+    ├── game-3d-scene-specialist/          #  Three.jsシーン・カメラ・描画・UI専門スキル
     │   └── SKILL.md
-    └── game-3d-qa-specialist/             # 🛠️ ビルド検証・整合性修復専門スキル
+    └── game-3d-qa-specialist/             #  ビルド検証・整合性修復専門スキル
         └── SKILL.md
 ```
 
 ---
 
-## 🤖 構成エージェント一覧
+##  構成エージェント一覧
 
 | エージェント / スキル名 | 役割概要 | 主要技術 / 担当領域 |
 |---|---|---|
@@ -52,7 +52,7 @@ Three.js、Cannon-es（または Rapier3D）、Vite、TypeScript を主軸とし
 
 ---
 
-## 🚀 導入方法
+##  導入方法
 
 Antigravity のスキルディレクトリ（ユーザー環境の `~/.gemini/config/skills/`）に本リポジトリの `skills/` 配下の各スキルフォルダを配置することで利用可能になります。
 
@@ -68,7 +68,7 @@ cp -r skills/* ~/.gemini/config/skills/
 
 ---
 
-## 💬 使い方
+##  使い方
 
 Antigravity のチャット上で、以下のように呼び出します：
 
@@ -86,12 +86,12 @@ Three.jsでサイバーパンク風の3D障害物ランゲームを作成して�
 
 ---
 
-## 📖 詳細ドキュメント
+##  詳細ドキュメント
 
 システムの全体アーキテクチャや各エージェントのインターフェース仕様については、[docs/web_3d_game_create_architecture.md](docs/web_3d_game_create_architecture.md) を参照してください。
 
 ---
 
-## 📄 ライセンス
+##  ライセンス
 
 MIT License
