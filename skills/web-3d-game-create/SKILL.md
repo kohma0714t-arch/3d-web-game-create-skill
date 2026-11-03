@@ -13,13 +13,16 @@ description: Three.js / Cannon-es (または Rapier3D) / Vite / TypeScript を�
 
 ## 専門3Dサブエージェント編成と職能
 
-| 専門サブエージェントスキル | 担当フェーズ | 主な職能と成果物 |
+本スキルでは、各専門職の仕様書を内部の `references/` ディレクトリに管理しています。
+親エージェントは各サブエージェントをディスパッチする際、対応する `references/<specialist-name>.md` を参照し、その内容および `<SUBAGENT_CONTEXT>` を `invoke_subagent` の `Prompt` に渡して起動します。
+
+| 専門サブエージェント仕様 | 担当フェーズ | 主な職能と成果物 |
 | :--- | :--- | :--- |
-| **`game-3d-asset-specialist`** | 3D形状・テクスチャ・マテリアル | `generate_image` を活用したテクスチャ/スカイボックス生成、プロシージャルメッシュ（ジオメトリ合成）、PBRマテリアル構築と `src/assets/asset-manifest.ts` の出力 |
-| **`game-3d-audio-specialist`** | 3D立体音響 ＆ プロシージャルSE/BGM | Web Audio API / PositionalAudio による音源位置依存サウンド（PannerNode）、ドップラー効果、BGMシンセ（`src/audio/sound-manager.ts`）の実装 |
-| **`game-3d-logic-specialist`** | 3D物理・キャラクター操作・コアループ | 3D物理ワールド（Cannon-es/Rapier）、FPS/TPSキャラクター操作、ジャンプ/重力、レイキャスト衝突判定、敵AI、定数定義（`src/entities/*`, `src/systems/*`, `src/config/constants.ts`）の実装 |
-| **`game-3d-scene-specialist`** | 3Dシーン統合・照明・Juice演出・HUD | Three.js レンダラー、シーン、ライティング・シャドウ、カメラ制御、ポストプロセス（Bloom/画面揺れ）、2DオーバーレイHUD、`src/main.ts` を統合実装 |
-| **`game-3d-qa-specialist`** | 3Dビルド検証・最適化・自動修復 | `npm run build`、`tsc --noEmit`、ドローコール最適化・テクスチャ破棄確認と、原因別自動修復ディスパッチ（最大3回ループ） |
+| **`references/game-3d-asset-specialist.md`** | 3D形状・テクスチャ・マテリアル | `generate_image` を活用したテクスチャ/スカイボックス生成、プロシージャルメッシュ（ジオメトリ合成）、PBRマテリアル構築と `src/assets/asset-manifest.ts` の出力 |
+| **`references/game-3d-audio-specialist.md`** | 3D立体音響 ＆ プロシージャルSE/BGM | Web Audio API / PositionalAudio による音源位置依存サウンド（PannerNode）、ドップラー効果、BGMシンセ（`src/audio/sound-manager.ts`）の実装 |
+| **`references/game-3d-logic-specialist.md`** | 3D物理・キャラクター操作・コアループ | 3D物理ワールド（Cannon-es/Rapier）、FPS/TPSキャラクター操作、ジャンプ/重力、レイキャスト衝突判定、敵AI、定数定義（`src/entities/*`, `src/systems/*`, `src/config/constants.ts`）の実装 |
+| **`references/game-3d-scene-specialist.md`** | 3Dシーン統合・照明・Juice演出・HUD | Three.js レンダラー、シーン、ライティング・シャドウ、カメラ制御、ポストプロセス（Bloom/画面揺れ）、2DオーバーレイHUD、`src/main.ts` を統合実装 |
+| **`references/game-3d-qa-specialist.md`** | 3Dビルド検証・最適化・自動修復 | `npm run build`、`tsc --noEmit`、ドローコール最適化・テクスチャ破棄確認と、原因別自動修復ディスパッチ（最大3回ループ） |
 
 ---
 
