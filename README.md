@@ -1,4 +1,4 @@
-# 3D Web Game Create Skill 🎮✨
+# 3D Web Game Create Skill 
 
 Google Antigravity 向けの自律型 3D Webブラウザゲーム制作エージェントスキルです。
 Three.js、Cannon-es（または Rapier3D）、Vite、TypeScript を主軸とし、親オーケストレーターと5つの専門職仕様（`references/`）が協調して、企画立案からアセット・音響・ロジック・演出・ビルド検証までをフル自律で開発します。
@@ -7,7 +7,7 @@ Three.js、Cannon-es（または Rapier3D）、Vite、TypeScript を主軸とし
 
 ---
 
-## 🌟 特徴
+##  特徴
 
 - **スラッシュコマンド最適化**: 親コマンド（`/web-3d-game-create`）のみがチャットの `/` に候補表示され、サブエージェント仕様は内部の `references/` から自動読込されるため、UIの邪魔になりません。
 - **フル自律パイプライン**: ユーザーの簡単な要望（「三人称の3Dアクションゲームを作って」「宇宙を飛ぶ3Dシューティングを作って」など）から、3D-GDD策定、実装、テスト検証までを一貫して自動化。
@@ -19,26 +19,26 @@ Three.js、Cannon-es（または Rapier3D）、Vite、TypeScript を主軸とし
 
 ---
 
-## 📂 ディレクトリ構成
+##  ディレクトリ構成
 
 ```text
 3d-web-game-create-skill/
 ├── docs/
 │   └── web_3d_game_create_architecture.md # アーキテクチャ詳細設計書
 └── skills/
-    └── web-3d-game-create/                # 👑 親オーケストレータースキル（単一スキルとして導入可能）
+    └── web-3d-game-create/                #  親オーケストレータースキル（単一スキルとして導入可能）
         ├── SKILL.md                       # 親エージェント指示書
         └── references/                    # 専門サブエージェント仕様定義
-            ├── game-3d-asset-specialist.md   # 🎨 3Dビジュアル・テクスチャ専門仕様
-            ├── game-3d-audio-specialist.md   # 🔊 3D立体音響・Web Audioシンセ専門仕様
-            ├── game-3d-logic-specialist.md   # ⚙️ 3D物理・エンティティ・ゲームループ専門仕様
-            ├── game-3d-scene-specialist.md   # 🎬 Three.jsシーン・カメラ・描画・UI専門仕様
-            └── game-3d-qa-specialist.md      # 🛠️ ビルド検証・整合性修復専門仕様
+            ├── game-3d-asset-specialist.md   #  3Dビジュアル・テクスチャ専門仕様
+            ├── game-3d-audio-specialist.md   #  3D立体音響・Web Audioシンセ専門仕様
+            ├── game-3d-logic-specialist.md   #  3D物理・エンティティ・ゲームループ専門仕様
+            ├── game-3d-scene-specialist.md   #  Three.jsシーン・カメラ・描画・UI専門仕様
+            └── game-3d-qa-specialist.md      #  ビルド検証・整合性修復専門仕様
 ```
 
 ---
 
-## 🤖 専門職仕様一覧
+##  専門職仕様一覧
 
 | 専門仕様（references） | 担当フェーズ | 主要技術 / 担当領域 |
 |---|---|---|
@@ -50,7 +50,7 @@ Three.js、Cannon-es（または Rapier3D）、Vite、TypeScript を主軸とし
 
 ---
 
-## 🚀 導入方法
+##  導入方法
 
 Antigravity のスキルディレクトリ（ユーザー環境の `~/.gemini/config/skills/`）に本リポジトリの `skills/web-3d-game-create` フォルダをそのまま配置するだけで利用可能です。
 
@@ -66,7 +66,7 @@ cp -r skills/web-3d-game-create ~/.gemini/config/skills/
 
 ---
 
-## 💬 使い方
+##  使い方
 
 Antigravity のチャット上で、以下のように呼び出します：
 
@@ -84,7 +84,7 @@ Three.jsでサイバーパンク風の3D障害物ランゲームを作成して�
 
 ---
 
-## 📖 詳細ドキュメント
+##  詳細ドキュメント
 
 システムの全体アーキテクチャや各エージェントのインターフェース仕様については、[docs/web_3d_game_create_architecture.md](docs/web_3d_game_create_architecture.md) を参照してください。
 
